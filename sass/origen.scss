@@ -19,14 +19,9 @@ body {
 	font-family: $font-family_1;
 }
 
-.header {
-	background-color: $background-color_2;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 85px;
-	padding: 5px 10%;
+@use 'header';
 
+.header {
 	.logo {
 		cursor: pointer;
 
@@ -85,6 +80,7 @@ body {
 		}
 	}
 }
+
 @mixin carta {
 	width: 300px;
 	height: 380px;
@@ -129,19 +125,7 @@ body {
 	text-align: center;
 }
 
-.containerInicio {
-	display: flex;
-	padding: 20px;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	background-image: url(./../assets/images/frutos2.jpg);
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin-left: 5px;
-}
+@use 'container';
 
 .containerPromociones {
 	display: flex;
@@ -167,6 +151,7 @@ $color_1: black;
 	background-repeat: no-repeat;
 	margin-left: 5px;
 	display: flex;
+
 	main {
 		display: flex;
 		flex-direction: column;

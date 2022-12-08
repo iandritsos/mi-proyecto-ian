@@ -1,0 +1,13 @@
+.containerInicio {
+	display: flex;
+	padding: 20px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url(./../assets/images/frutos2.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+}
